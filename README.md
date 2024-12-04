@@ -74,12 +74,12 @@ For sensor fusion, I mapped the LiDAR point cloud onto a 2D image plane:
 
 #### Results:
 the depth is color-coded, with greater depth values represented by green, yellow, pink, and purple for greater depth points.
-** Half of Picture:
+* Half of Picture:
 
 <img style="width:750px" src="https://github.com/user-attachments/assets/bf6ac6b0-c9ce-4b8e-8723-e721e5eb92c1"> 
 <img style="width:750px" src="https://github.com/user-attachments/assets/a11b4d06-8e72-4cd0-a14d-7f32fcecca0b"> 
 
-** Full Picture:
+* Full Picture:
 
 <img style="width:750px" src="https://github.com/user-attachments/assets/b27a8eda-f31f-4c32-aaaf-0dd526e9d814"> 
 <img style="width:750px" src="https://github.com/user-attachments/assets/ae0798fe-d9bf-420c-8cad-9f9ccb2c51e9"> 
@@ -114,8 +114,6 @@ For reconstructing a dense 3D point cloud:
 3. **Visualization**: Rendered the reconstructed scene using Open3D. The stereo-based depth map helped produce a more detailed 3D representation than LiDAR alone.
 
 #### Results:
-
-![image](https://github.com/user-attachments/assets/0775f60a-ea31-40d3-ab3d-dfe761af369f)
 
 <img style="width:750px" src="https://github.com/user-attachments/assets/10e39a17-7e46-472a-ba9a-db182c0c2901"> 
 <img style="width:750px" src="https://github.com/user-attachments/assets/9ee3f3a7-1e67-4847-a1d8-9b267f5f77c8"> 
