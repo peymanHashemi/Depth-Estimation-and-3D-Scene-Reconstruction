@@ -50,37 +50,63 @@ The content of your report includes a set of tasks related to depth estimation a
 
 ### **Method**
 
-#### **1. LiDAR Data Visualization and Analysis**
+### **1. LiDAR Data Visualization and Analysis**
 To start, I loaded and visualized LiDAR point cloud data using the Open3D library. The steps were:
 1. **Load the Point Cloud Data**: Using Open3D's `read_point_cloud()` function, I loaded the LiDAR `.pcd` file.
 2. **Visualize the Data**: The `draw_geometries()` function was used to render the point cloud in a 3D space.
 3. **Analysis**: I observed the density and distribution of points, noting that while point clouds offer high accuracy, their sparsity limits fine-detail depth representation.
 
-#### **2. Sensor Fusion and Point Cloud Mapping**
+#### Results:
+
+From Above:
+
+<img style="width:400px" src="https://github.com/user-attachments/assets/d6b89739-48f2-4041-999d-02444bb3f800"> 
+
+From Another Angle:
+
+<img style="width:400px" src="https://github.com/user-attachments/assets/c09deaf2-41c8-4733-a60a-f1e602bdd242"> 
+
+### **2. Sensor Fusion and Point Cloud Mapping**
 For sensor fusion, I mapped the LiDAR point cloud onto a 2D image plane:
 1. **Projection Preparation**: I utilized the calibration parameters (camera matrices and transformations) provided in the KITTI dataset to align the LiDAR data with the image.
 2. **Mapping Points**: Using the intrinsic camera matrix, I converted the 3D coordinates of the point cloud into 2D image pixels.
 3. **Depth Visualization**: For each mapped point, I assigned a color based on its depth, creating a pseudo-color depth image.
 
-#### **3. Depth Map Generation with Interpolation**
+#### Results:
+
+<img style="width:400px" src="https://github.com/user-attachments/assets/ebb1359b-af55-4021-bb5c-57415242ed0d"> 
+
+
+### **3. Depth Map Generation with Interpolation**
 To handle the sparse depth data, I applied interpolation techniques:
 1. **Data Selection**: Extracted depth values from the LiDAR point cloud mapped onto the image.
 2. **Interpolation**: Used the `scipy.interpolate.griddata()` function to fill in the gaps in the depth map with linear interpolation.
 3. **Evaluation**: Compared different interpolation methods (nearest, linear, cubic) to assess accuracy and visual coherence. Linear interpolation yielded the best balance between performance and realism.
 
-#### **4. Stereo Vision for Depth Estimation**
+#### Results:
+
+<img style="width:400px" src="https://github.com/user-attachments/assets/ebb1359b-af55-4021-bb5c-57415242ed0d"> 
+
+
+### **4. Stereo Vision for Depth Estimation**
 Using stereo images from paired cameras:
 1. **Preprocessing**: Converted stereo images to grayscale.
 2. **Disparity Calculation**: Used OpenCV's `StereoBM` function to compute the disparity map between the left and right images.
 3. **Depth Calculation**: Transformed the disparity map into a depth map using the known baseline distance and camera focal length.
 4. **Comparison**: Evaluated the stereo-based depth map against the LiDAR-generated map, finding that stereo vision provided more dense but slightly less accurate depth maps.
 
-#### **5. 3D Scene Reconstruction**
+#### Results:
+
+<img style="width:400px" src="https://github.com/user-attachments/assets/ebb1359b-af55-4021-bb5c-57415242ed0d"> 
+
+### **5. 3D Scene Reconstruction**
 For reconstructing a dense 3D point cloud:
 1. **Generate 3D Points**: Combined the depth map from stereo vision with the original image to back-project each pixel into 3D space using camera intrinsics.
 2. **Color Mapping**: Assigned colors from the image to each 3D point for realistic visualization.
 3. **Visualization**: Rendered the reconstructed scene using Open3D. The stereo-based depth map helped produce a more detailed 3D representation than LiDAR alone.
 
----
+#### Results:
 
-This structured approach captures the key steps and challenges addressed for each task in the project. Let me know if you'd like further elaboration or code examples for any part.
+<img style="width:400px" src="https://github.com/user-attachments/assets/ebb1359b-af55-4021-bb5c-57415242ed0d"> 
+
+
