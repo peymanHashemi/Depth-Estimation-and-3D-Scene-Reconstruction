@@ -1,6 +1,12 @@
 # Depth Estimation and 3D Scene Reconstruction
 This project explores two key methods for estimating depth in computer vision: stereo vision and LiDAR sensors. The objective is to generate depth maps and reconstruct 3D scenes using data from the KITTI dataset, a well-known benchmark for autonomous driving research. The project emphasizes understanding and implementing fusion techniques that combine data from cameras and LiDAR for enhanced 3D perception.
 
+# Content
+- Table of Contents
+  * [Project Tasks](#Project-Tasks) 
+  * [Dataset and Guidelines](#Dataset-and-Guidelines)  
+  * [METHOD](#METHOD)
+    
 ## Project Tasks
 
 ### 1. LiDAR Data Visualization and Analysis:
