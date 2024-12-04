@@ -62,9 +62,10 @@ From Above:
 
 <img style="width:400px" src="https://github.com/user-attachments/assets/d6b89739-48f2-4041-999d-02444bb3f800"> 
 
-| <img style="width:400px" src="https://github.com/user-attachments/assets/d6b89739-48f2-4041-999d-02444bb3f800"> |
-|:--:|
 | *This is the caption for the image* |
+|:--:|
+| <img style="width:400px" src="https://github.com/user-attachments/assets/d6b89739-48f2-4041-999d-02444bb3f800"> |
+
 
 ![This is the caption for the image](https://github.com/user-attachments/assets/d6b89739-48f2-4041-999d-02444bb3f800)
 
