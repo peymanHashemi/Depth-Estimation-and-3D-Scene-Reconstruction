@@ -62,6 +62,13 @@ From Above:
 
 <img style="width:400px" src="https://github.com/user-attachments/assets/d6b89739-48f2-4041-999d-02444bb3f800"> 
 
+| <img style="width:400px" src="https://github.com/user-attachments/assets/d6b89739-48f2-4041-999d-02444bb3f800"> |
+|:--:|
+| *This is the caption for the image* |
+
+![This is the caption for the image](https://github.com/user-attachments/assets/d6b89739-48f2-4041-999d-02444bb3f800)
+
+
 From Another Angle:
 
 <img style="width:400px" src="https://github.com/user-attachments/assets/c09deaf2-41c8-4733-a60a-f1e602bdd242"> 
