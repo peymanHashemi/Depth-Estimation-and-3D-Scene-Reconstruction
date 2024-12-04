@@ -60,11 +60,11 @@ To start, I loaded and visualized LiDAR point cloud data using the Open3D librar
 
 | *From Above* |
 |:--:|
-| <img style="width:400px" src="https://github.com/user-attachments/assets/d6b89739-48f2-4041-999d-02444bb3f800"> |
+| <img style="width:500px" src="https://github.com/user-attachments/assets/d6b89739-48f2-4041-999d-02444bb3f800"> |
 
 | *From Another Angle* |
 |:--:|
-| <img style="width:500px" src="https://github.com/user-attachments/assets/c09deaf2-41c8-4733-a60a-f1e602bdd242"> |
+| <img style="width:600px" src="https://github.com/user-attachments/assets/c09deaf2-41c8-4733-a60a-f1e602bdd242"> |
 
 ### **2. Sensor Fusion and Point Cloud Mapping**
 For sensor fusion, I mapped the LiDAR point cloud onto a 2D image plane:
@@ -75,12 +75,14 @@ For sensor fusion, I mapped the LiDAR point cloud onto a 2D image plane:
 #### Results:
 the depth is color-coded, with greater depth values represented by green, yellow, pink, and purple for greater depth points.
 ** Half of Picture:
-<img style="width:400px" src="https://github.com/user-attachments/assets/bf6ac6b0-c9ce-4b8e-8723-e721e5eb92c1"> 
-<img style="width:400px" src="https://github.com/user-attachments/assets/a11b4d06-8e72-4cd0-a14d-7f32fcecca0b"> 
+
+<img style="width:600px" src="https://github.com/user-attachments/assets/bf6ac6b0-c9ce-4b8e-8723-e721e5eb92c1"> 
+<img style="width:700px" src="https://github.com/user-attachments/assets/a11b4d06-8e72-4cd0-a14d-7f32fcecca0b"> 
 
 ** Full Picture:
-<img style="width:400px" src="https://github.com/user-attachments/assets/b27a8eda-f31f-4c32-aaaf-0dd526e9d814"> 
-<img style="width:400px" src="https://github.com/user-attachments/assets/ae0798fe-d9bf-420c-8cad-9f9ccb2c51e9"> 
+
+<img style="width:800px" src="https://github.com/user-attachments/assets/b27a8eda-f31f-4c32-aaaf-0dd526e9d814"> 
+<img style="width:900px" src="https://github.com/user-attachments/assets/ae0798fe-d9bf-420c-8cad-9f9ccb2c51e9"> 
 
 ### **3. Depth Map Generation with Interpolation**
 To handle the sparse depth data, I applied interpolation techniques:
