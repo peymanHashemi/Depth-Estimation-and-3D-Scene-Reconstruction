@@ -5,6 +5,7 @@ This project explores two key methods for estimating depth in computer vision: s
 - Table of Contents
   * [Project Tasks](#Project-Tasks) 
   * [Dataset and Guidelines](#Dataset-and-Guidelines)  
+  * [References and Resources](#References-and-Resources)
   * [METHOD](#METHOD)
     
 ## Project Tasks
@@ -41,6 +42,13 @@ The project utilizes data from the KITTI dataset, which includes images and LiDA
 Stereo images from paired cameras.
 LiDAR point clouds with calibration files for accurate mapping between sensors.
 Calibration parameters, including camera matrices and transformation matrices between LiDAR and cameras, are essential for sensor fusion and accurate depth estimation.
+
+### **References and Resources**
+
+For further guidance, you can use the following resources:  
+
+1. [Camera-Lidar Projection](https://medium.com/swlh/camera-lidar-projection-navigating-between-2d-and-3d-911c78167a94)  
+2. [Open3d visualization](https://stackoverflow.com/questions/60648588/can-open3d-visualize-a-point-cloud-in-rgb-mode)  
 
 ## METHOD
 
