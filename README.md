@@ -60,13 +60,19 @@ To start, I loaded and visualized LiDAR point cloud data using the Open3D librar
 
 From Above:
 
-| *From Above* |
-|:--:|
-| <img style="width:400px" src="https://github.com/user-attachments/assets/d6b89739-48f2-4041-999d-02444bb3f800"> |
+<div style="display: flex; flex-direction: row; justify-content: space-around;">
 
-| *From Another Angle* |
-|:--:|
-| <img style="width:500px" src="https://github.com/user-attachments/assets/c09deaf2-41c8-4733-a60a-f1e602bdd242"> |
+<div style="text-align: center;">
+    <p><b>From Above</b></p>
+    <img style="width: 400px;" src="https://github.com/user-attachments/assets/d6b89739-48f2-4041-999d-02444bb3f800">
+</div>
+
+<div style="text-align: center; margin-left: 20px;">
+    <p><b>From Another Angle</b></p>
+    <img style="width: 500px;" src="https://github.com/user-attachments/assets/c09deaf2-41c8-4733-a60a-f1e602bdd242">
+</div>
+
+</div>
 
 ### **2. Sensor Fusion and Point Cloud Mapping**
 For sensor fusion, I mapped the LiDAR point cloud onto a 2D image plane:
