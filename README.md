@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/0775f60a-ea31-40d3-ab3d-dfe761af369f)# Depth Estimation and 3D Scene Reconstruction
+# Depth Estimation and 3D Scene Reconstruction
 This project explores two key methods for estimating depth in computer vision: stereo vision and LiDAR sensors. The objective is to generate depth maps and reconstruct 3D scenes using data from the KITTI dataset, a well-known benchmark for autonomous driving research. The project emphasizes understanding and implementing fusion techniques that combine data from cameras and LiDAR for enhanced 3D perception.
 
 # Content
@@ -76,13 +76,13 @@ For sensor fusion, I mapped the LiDAR point cloud onto a 2D image plane:
 the depth is color-coded, with greater depth values represented by green, yellow, pink, and purple for greater depth points.
 ** Half of Picture:
 
-<img style="width:600px" src="https://github.com/user-attachments/assets/bf6ac6b0-c9ce-4b8e-8723-e721e5eb92c1"> 
-<img style="width:700px" src="https://github.com/user-attachments/assets/a11b4d06-8e72-4cd0-a14d-7f32fcecca0b"> 
+<img style="width:750px" src="https://github.com/user-attachments/assets/bf6ac6b0-c9ce-4b8e-8723-e721e5eb92c1"> 
+<img style="width:750px" src="https://github.com/user-attachments/assets/a11b4d06-8e72-4cd0-a14d-7f32fcecca0b"> 
 
 ** Full Picture:
 
-<img style="width:800px" src="https://github.com/user-attachments/assets/b27a8eda-f31f-4c32-aaaf-0dd526e9d814"> 
-<img style="width:900px" src="https://github.com/user-attachments/assets/ae0798fe-d9bf-420c-8cad-9f9ccb2c51e9"> 
+<img style="width:750px" src="https://github.com/user-attachments/assets/b27a8eda-f31f-4c32-aaaf-0dd526e9d814"> 
+<img style="width:750px" src="https://github.com/user-attachments/assets/ae0798fe-d9bf-420c-8cad-9f9ccb2c51e9"> 
 
 ### **3. Depth Map Generation with Interpolation**
 To handle the sparse depth data, I applied interpolation techniques:
@@ -92,8 +92,8 @@ To handle the sparse depth data, I applied interpolation techniques:
 
 #### Results:
 
-<img style="width:400px" src="https://github.com/user-attachments/assets/a0637c49-32b3-4ff6-95aa-7c9d1f3f9ed8"> 
-<img style="width:400px" src="https://github.com/user-attachments/assets/03695d00-3b6c-4776-960e-a056bf33e645"> 
+<img style="width:750px" src="https://github.com/user-attachments/assets/a0637c49-32b3-4ff6-95aa-7c9d1f3f9ed8"> 
+<img style="width:750px" src="https://github.com/user-attachments/assets/03695d00-3b6c-4776-960e-a056bf33e645"> 
 
 ### **4. Stereo Vision for Depth Estimation**
 Using stereo images from paired cameras:
@@ -104,8 +104,8 @@ Using stereo images from paired cameras:
 
 #### Results:
 
-<img style="width:400px" src="https://github.com/user-attachments/assets/a9b2deb5-8cc1-4474-b185-e49794286627"> 
-<img style="width:400px" src="https://github.com/user-attachments/assets/a00dab95-d51f-484c-8e4b-d78325f2cf5c"> 
+<img style="width:750px" src="https://github.com/user-attachments/assets/a9b2deb5-8cc1-4474-b185-e49794286627"> 
+<img style="width:750px" src="https://github.com/user-attachments/assets/a00dab95-d51f-484c-8e4b-d78325f2cf5c"> 
 
 ### **5. 3D Scene Reconstruction**
 For reconstructing a dense 3D point cloud:
@@ -115,7 +115,9 @@ For reconstructing a dense 3D point cloud:
 
 #### Results:
 
-<img style="width:400px" src="https://github.com/user-attachments/assets/10e39a17-7e46-472a-ba9a-db182c0c2901"> 
-<img style="width:400px" src="https://github.com/user-attachments/assets/9ee3f3a7-1e67-4847-a1d8-9b267f5f77c8"> 
+![image](https://github.com/user-attachments/assets/0775f60a-ea31-40d3-ab3d-dfe761af369f)
+
+<img style="width:750px" src="https://github.com/user-attachments/assets/10e39a17-7e46-472a-ba9a-db182c0c2901"> 
+<img style="width:750px" src="https://github.com/user-attachments/assets/9ee3f3a7-1e67-4847-a1d8-9b267f5f77c8"> 
 
 
